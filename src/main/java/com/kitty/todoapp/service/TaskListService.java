@@ -60,7 +60,6 @@ public class TaskListService {
         Optional<TaskListModel> taskFoundByName = this.taskListRepository.findTaskByName(taskName);
 
         if(!taskFoundByName.isPresent()) {
-            System.out.println("Hello");
             throw new Exception("Task not found");
         }
 
